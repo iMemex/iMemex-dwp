@@ -29,7 +29,7 @@ function publicLayout() {
   if (GATEWAY.includes('localhost') || GATEWAY.includes('127.0.0.1')) {
     div.innerHTML = 'Add File(s) for Public Dweb Sharing';
   } else {
-    div.innerHTML = 'Add File(s) for Public Dweb Sharing<br> <span id="limitText">Up to 1GB</span>';
+    div.innerHTML = 'Add File(s) for Public Dweb Sharing<br> <span id="limitText">Up to 1MB</span>';
   }
   document.getElementById('start').appendChild(div);
 }
@@ -47,7 +47,7 @@ function privateLayout() {
   if (GATEWAY.includes('localhost') || GATEWAY.includes('127.0.0.1')) {
     div.innerHTML = 'Add File(s) for Private Dweb Sharing';
   } else {
-    div.innerHTML = 'Add File(s) for Private Dweb Sharing<br> <span id="limitText">Up to 1GB</span>';
+    div.innerHTML = 'Add File(s) for Private Dweb Sharing<br> <span id="limitText">Up to 1MB</span>';
   }
   document.getElementById('start').appendChild(div);
 }

@@ -242,19 +242,16 @@ function transferFailed() {
 }
 
 async function uploadToIPFS(buf, isEncrypted) {
-  // if local always upload on an additional public gateway
   if (checkLocalGateway()) {
     // TODO: big files/parallel
-    fileId = await localUpload(buf);
-  }
-  if (checkLocalGateway() && fileId === undefined) {
-    transferFailed();
+    fileId = await localUpload(buf, gateway);
+    if (fileId === undefined) {
+      transferFailed();
+    }
   } else {
     const xhr = new XMLHttpRequest();
-    if (checkLocalGateway()) {
-      const [publicGateway] = shuffleArray(LIST_OF_IPFS_GATEWAYS);
-      gateway = publicGateway;
-    }
+    const [publicGateway] = shuffleArray(LIST_OF_IPFS_GATEWAYS);
+    gateway = publicGateway;
     xhr.open('POST', gateway, true);
     xhr.responseType = 'arraybuffer';
     xhr.timeout = 3600000;
