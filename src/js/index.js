@@ -16,7 +16,6 @@ import './viewmodels/steps';
 import './viewmodels/filePage';
 import './viewmodels/receivePage';
 import './viewmodels/navigation';
-import './viewmodels/aboutPage';
 import createTagsElement from './viewmodels/tags';
 import Encryption from './crypto/Encryption';
 import EncryptionBuf from './ipfs/EncryptionBuf';
@@ -34,7 +33,6 @@ import '../css/alert.css';
 import '../css/menu.css';
 import '../css/tags.css';
 import favicon from '../img/favicon.png';
-import logo from '../img/dweb.png';
 import createMetadata from './search/createMetadata';
 import createLog from './log/createLog';
 import { DEFAULT_DESCRIPTION } from './search/searchConfig';
@@ -46,8 +44,6 @@ library.add(faArrowDown, faArrowUp, faVideo, faMusic, faFile, faFolderOpen, faEn
   faPlayCircle, faExclamationCircle, faBars, faBan,
   faWhatsapp, faTelegramPlane, faImage);
 dom.watch();
-document.getElementById('logo1').src = logo;
-document.getElementById('logo2').src = logo;
 document.getElementById('favicon').href = favicon;
 const JSZip = require('jszip');
 
@@ -81,7 +77,6 @@ function output(msg) {
 function prepareStepsLayout() {
   document.getElementById('file-upload-form').style.display = 'none';
   document.getElementById('headline').style.display = 'none';
-  document.getElementById('adDoFrame').style.display = 'inline-block';
   document.getElementById('afterUpload').style.display = 'block';
 }
 
@@ -344,17 +339,5 @@ function upload() {
   document.getElementById('file-upload').addEventListener('change', readFile, false);
   document.getElementById('file-drag').addEventListener('drop', readFile, false);
 }
-
-document.getElementById('videoLink').addEventListener('click', () => {
-  document.getElementById('video-ovelay').style.display = 'block';
-});
-document.getElementById('videoLink2').addEventListener('click', () => {
-  document.getElementById('video-ovelay').style.display = 'block';
-});
-document.getElementById('video-ovelay').addEventListener('click', () => {
-  document.getElementById('video-ovelay').style.display = 'none';
-  const iframe = document.getElementById('htmlvideo').contentWindow;
-  iframe.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
-});
 
 upload();

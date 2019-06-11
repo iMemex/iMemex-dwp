@@ -3,7 +3,7 @@ import getURLParameter from '../helperFunctions/urlParameter';
 function menuAnimation(inputId) {
   // reset upload page, receive etc.
   document.getElementById('show-menu').checked = false;
-  const ids = ['receivePage', 'filePage', 'index', 'aboutPage'];
+  const ids = ['receivePage', 'filePage', 'index'];
   for (let i = 0; i < ids.length; i += 1) {
     if (ids[i] === inputId) {
       document.getElementById(ids[i]).style.transition = 'visibility 0.2s,transform 0.2s, opacity 0.2s cubic-bezier(0.0, 0.0, 0.2, 1)';
@@ -70,7 +70,6 @@ function indexInit() {
   document.getElementById('file-upload-form').style.display = 'block';
   document.getElementById('headline').style.display = 'block';
   document.getElementById('afterUpload').style.display = 'none';
-  document.getElementById('adDoFrame').style.display = 'none';
   document.getElementById('start').style.display = 'block';
   document.getElementById('response').style.display = 'none';
   document.getElementById('file-image').style.display = 'none';
@@ -117,7 +116,7 @@ function aboutInit() {
 }
 
 function currentPage(inputId) {
-  const ids = ['toIndex', 'toReceive', 'toFile', 'toAbout'];
+  const ids = ['toIndex', 'toReceive', 'toFile'];
   for (let i = 0; i < ids.length; i += 1) {
     if (ids[i] === inputId) {
       document.getElementById(ids[i]).classList.add('currentPage');
@@ -125,8 +124,6 @@ function currentPage(inputId) {
         searchInit();
       } else if (ids[i] === 'toIndex') {
         indexInit();
-      } else if (ids[i] === 'toAbout') {
-        aboutInit();
       }
     } else {
       document.getElementById(ids[i]).classList.remove('currentPage');
@@ -140,16 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const fileIdPar = getURLParameter('id');
   const passwordPar = getURLParameter('password');
   const namePar = getURLParameter('name');
-  if (urlParameter === 'terms' || urlParameter === 'privacy') {
-    document.getElementById('dialog-ovelay').style.display = 'none';
-    menuAnimation('aboutPage');
-    currentPage('toAbout');
-    if (urlParameter === 'terms') {
-      document.getElementById('terms').click();
-    } else if (urlParameter === 'privacy') {
-      document.getElementById('privacy').click();
-    }
-  } else if (typeof fileIdPar !== 'undefined') {
+  if (typeof fileIdPar !== 'undefined') {
     menuAnimation('receivePage');
     currentPage('');
     linkInit();
@@ -175,14 +163,6 @@ window.openHistory = function openHistory() {
   currentPage('toFile');
 };
 
-document.getElementById('toTerms').addEventListener('click', () => {
-  window.open(`${window.location.href}?par=terms`, '_blank');
-});
-
-document.getElementById('toPrivacy').addEventListener('click', () => {
-  window.open(`${window.location.href}?par=privacy`, '_blank');
-});
-
 document.getElementById('toIndex').addEventListener('click', () => {
   window.history.replaceState(null, null, window.location.pathname);
   showCookieAlert();
@@ -205,11 +185,6 @@ document.getElementById('toFile').addEventListener('click', () => {
   window.history.replaceState(null, null, window.location.pathname);
   showCookieAlert();
   window.openHistory();
-});
-
-document.getElementById('toAbout').addEventListener('click', () => {
-  menuAnimation('aboutPage');
-  currentPage('toAbout');
 });
 
 document.getElementById('all').addEventListener('click', () => {

@@ -1,7 +1,7 @@
 {
-  "name": "dweb.page",
+  "name": "imemex",
   "version": "0.6.3",
-  "description": "Your Gateway to the Distributed Web",
+  "description": "Your Personal and Distributed Web",
   "private": true,
   "scripts": {
     "tests": "jest",
@@ -9,11 +9,8 @@
     "watch": "webpack --watch",
     "build": "webpack"
   },
-  "jest": {
-    "testURL": "http://localhost:8080/ipfs/QmSS34C6PzXVJTjMzqggZT34ibf4QE49b5kXRzLHdyBL7y"
-  },
-  "author": "David Hawig",
-  "license": "GPL-3.0-or-later",
+  "author": "voidao",
+  "license": "MIT",
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.15",

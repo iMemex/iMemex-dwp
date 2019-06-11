@@ -20,8 +20,8 @@ const minifySettings = {
 const metaTags = {
   // Content-Security-Policy needs a lot of improvement!
   'Content-Security-Policy': { 'http-equiv': 'Content-Security-Policy', content: 'default-src \'self\' \'unsafe-eval\' \'unsafe-inline\' blob:;connect-src *;style-src \'unsafe-inline\' https://fonts.googleapis.com https://use.fontawesome.com; img-src * blob: data:; font-src \'self\' https://fonts.gstatic.com data:; frame-src https://www.youtube.com/ blob:' },
-  description: 'Your Gateway to the Distributed Web',
-  author: 'PACT Care BV',
+  description: 'Personal store/library/encyclopedia which is publishing and social ready',
+  author: 'voidao',
   viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
 };
 
@@ -38,7 +38,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Dweb.page',
+      title: 'iMemex',
       minify: minifySettings,
       meta: metaTags,
       filename: './html/index.html',
