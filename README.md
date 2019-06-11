@@ -1,6 +1,8 @@
-# iMemex: Personal store/library/encyclopedia which is publishing and social ready.
+# iMemex
 
-> **_Try [iMemex](https://service.edening.net/ipfs/QmQ9g9WMLyuiAJjUuSrdPNLoCZD2GUcs4WWkaRo1w9c6CQ/) :)_**
+> Personal store/library/encyclopedia which is publishing and social ready.
+
+> **_Try [iMemex](https://service.edening.net/ipfs/QmYV8Dc767Gnp6zrw7mtkgJUjEDHfuK1vgjKmpZSgSZngw/) :)_**
 
 ### Features
 
@@ -28,10 +30,10 @@ If you wish to participate you can simply [set up your own IPFS node with a writ
 
 The most recent online version of [iMemex](https://imemex.edening.net) has the following hash:
 ```
-QmQ9g9WMLyuiAJjUuSrdPNLoCZD2GUcs4WWkaRo1w9c6CQ
+QmYV8Dc767Gnp6zrw7mtkgJUjEDHfuK1vgjKmpZSgSZngw
 ```
 **List of participating nodes**
-* https://service.edening.net/ipfs/QmQ9g9WMLyuiAJjUuSrdPNLoCZD2GUcs4WWkaRo1w9c6CQ/
+* https://service.edening.net/ipfs/QmYV8Dc767Gnp6zrw7mtkgJUjEDHfuK1vgjKmpZSgSZngw/
 
 ## License
 _**Credit: Inspired and Initially Based on `[Dweb.page](https://github.com/PACTCare/Dweb.page)`**_

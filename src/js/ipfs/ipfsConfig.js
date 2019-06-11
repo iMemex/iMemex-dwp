@@ -1,5 +1,5 @@
 export const LIST_OF_IPFS_GATEWAYS = [
-  'https://service.edening.net/ipfs/'
+  'https://imemex.edening.net/ipfs/'
 ];
 /*export const LIST_OF_IPFS_GATEWAYS = [
   'https://pact.onl/ipfs/'
