@@ -33,7 +33,7 @@ The most recent online version of [iMemex](https://imemex.edening.net) has the f
 QmYV8Dc767Gnp6zrw7mtkgJUjEDHfuK1vgjKmpZSgSZngw
 ```
 **List of participating nodes**
-* https://service.edening.net/ipfs/QmYV8Dc767Gnp6zrw7mtkgJUjEDHfuK1vgjKmpZSgSZngw/
+* https://imemex.edening.net/ipfs/QmYV8Dc767Gnp6zrw7mtkgJUjEDHfuK1vgjKmpZSgSZngw/
 
 ## License
 _**Credit: Inspired and Initially Based on `[Dweb.page](https://github.com/PACTCare/Dweb.page)`**_
