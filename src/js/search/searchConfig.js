@@ -1,4 +1,4 @@
-export const UNAVAILABLE_DESC = '&Unavailable on Dweb.page&';
+export const UNAVAILABLE_DESC = '&Unavailable on iMemex&';
 
 export const LOAD_DAYS_UPDATE = 1;
 

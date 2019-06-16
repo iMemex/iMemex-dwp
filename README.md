@@ -4,11 +4,18 @@
 
 > **_Try [iMemex](https://service.edening.net/ipfs/QmYV8Dc767Gnp6zrw7mtkgJUjEDHfuK1vgjKmpZSgSZngw/) :)_**
 
-### Features
+### Forwarding
+> `Search - ST(Store&Trail) - Share`
 
 - Local(IBIPFS) Store First
 - Trails Extending Tags
 - Classical Web Inclusion
+
+### Features
+
+- Local(IBIPFS) Store First // via IBIPFS?
+- Trails Extending Tags
+- Classical Web Inclusion // via IBIPFS?
 
 ### Install
 

@@ -188,6 +188,39 @@ function tagLayout() {
   }
 }
 
+/*function trailLayout() {
+  const myNode = document.getElementById('trailsDiv');
+  while (myNode.firstChild) {
+    myNode.removeChild(myNode.firstChild);
+  }
+  createTrailsElement();
+  document.getElementById('afterTrails').style.display = 'none';
+  document.getElementById('askForTrails').style.display = 'block';
+
+  const trailsDone = function trailsDone() {
+    const trails = document.getElementsByClassName('trail');
+    let trailsString = '';
+    for (let i = 0; i < trails.length; i += 1) {
+      trailsString += ` ${trails[i].textContent}`;
+    }
+    document.getElementById('afterTrails').style.display = 'block';
+    document.getElementById('askForTrails').style.display = 'none';
+    unencryptedLayout();
+    if (describtion === DEFAULT_DESCRIPTION && trailsString.length > 0) {
+      describtion = trailsString.trim();
+    } else {
+      // && marks the beginning of the describtion/end of tags
+      describtion = `${trailsString.trim()}&&${describtion}`;
+    }
+    createMetadata(fileId, filename, gateway, describtion);
+  };
+
+  // Add only once
+  if (!alreadyAdded) {
+    alreadyAdded = true;
+    document.getElementById('sendTrails').addEventListener('click', trailsDone);
+  }
+}*/
 
 function encryptedLayout() {
   changeBackgroundColor('#3157a7');
