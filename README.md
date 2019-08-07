@@ -34,4 +34,4 @@ QmYV8Dc767Gnp6zrw7mtkgJUjEDHfuK1vgjKmpZSgSZngw
 * https://imemex.edening.net/ipfs/QmYV8Dc767Gnp6zrw7mtkgJUjEDHfuK1vgjKmpZSgSZngw/
 
 ### License
-_**Credit: Inspired and Initially Based on [Dweb.page](https://github.com/PACTCare/Dweb.page)**_
+_**Credit: Inspired by and Initially Based on [Dweb.page](https://github.com/PACTCare/Dweb.page)**_
