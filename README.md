@@ -1,6 +1,6 @@
 # iMemex
 
-> Personal store/library/encyclopedia which is publishing and social ready.
+> Let the web fit you, your habits and your personality.
 
 > **_Try [iMemex](https://service.edening.net/ipfs/QmYV8Dc767Gnp6zrw7mtkgJUjEDHfuK1vgjKmpZSgSZngw/) :)_**
 
